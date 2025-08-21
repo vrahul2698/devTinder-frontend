@@ -10,7 +10,7 @@
 - Create Browserrouter > routes > route = /Body > RouteChildren
 - Create an outlet in an Body Component
 -Create an Footer in an Body Component
-
+- create an login Component
 
 
 
@@ -18,7 +18,7 @@
 Body
     Navbar
     Route =/ => Feed
-    Route/sigin =/ => Signin
+    Route/sigin =/ => Login
     Route/Connections =/ => Connections
     Route/profile =/ => Profile
 
