@@ -23,7 +23,6 @@ const Login = () => {
     }
     catch (err) {
       console.log(err , "err")
-      console.error(err);
       setError(err?.response?.data || "Something went wrong")
     }
   }
