@@ -8,12 +8,16 @@ const UserCard = ({ user }) => {
             <figure>
                 <img
                     src={photoUrl}
-                    alt="User" height={200} width={200} />
-                    
+                    alt="User"
+                    className="w-full object-contain rounded-t-xl bg-base-100"
+                // height={200} width={200} 
+                />
+
             </figure>
             <div className="card-body">
                 <h2 className="card-title">{firstName + " " + lastName}</h2>
                 {age && gender && <p>{age + ", " + gender}</p>}
+                {about && <p>{about}</p>}
                 <div className="card-actions justify-center my-5">
                     <button className="btn btn-primary">Ignore</button>
                     <button className="btn btn-secondary">Interested</button>
@@ -23,4 +27,4 @@ const UserCard = ({ user }) => {
     )
 }
 
-export default UserCard
+export default UserCard;

@@ -11,6 +11,9 @@
 - Create an outlet in an Body Component
 -Create an Footer in an Body Component
 - create an login Component
+- created edit profile
+- created home page to gie requests to people
+- created an connection page
 
 
 
