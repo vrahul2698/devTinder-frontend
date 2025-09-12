@@ -14,6 +14,7 @@
 - created edit profile
 - created home page to gie requests to people
 - created an connection page
+- added review requests
 
 
 

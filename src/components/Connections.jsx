@@ -21,14 +21,14 @@ const Connections = () => {
   useEffect(() => { fetchConnections(); }, [])
 
   if (!connections) return;
-  if (connections?.length === 0) return <h1>No Connections found</h1>
+  if (connections?.length === 0) return <h1 className='font-bold text-center my-10'>No Connections found</h1>
   return (
     <div className='text-center my-10'>
       <h1 className='text-bold text-white text-3xl'>Connections</h1>
-      {connections?.map((connection, index) => {
-        const { firstName, lastName, photoUrl, age, gender, about } = connection;
+      {connections?.map((connection) => {
+        const { _id, firstName, lastName, photoUrl, age, gender, about } = connection;
         return (
-          <div className='flex m-4 p-4 rounded-lg bg-base-200 w-1/2 mx-auto' key={index}>
+          <div className='flex m-4 p-4 rounded-lg bg-base-200 w-1/2 mx-auto' key={_id}>
             <div>
               <img alt='Photo' className='w-20 h-20 rounded-full' src={photoUrl} />
             </div>
@@ -37,6 +37,7 @@ const Connections = () => {
               {age && gender && <p>{age + " " + gender}</p>}
               <p>{about}</p>
             </div>
+
 
           </div>)
 

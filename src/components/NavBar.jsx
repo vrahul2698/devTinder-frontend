@@ -25,12 +25,13 @@ const NavBar = () => {
                 <Link to="/" className="btn btn-ghost text-xl">🧑‍💻 DevTinder</Link>
             </div>
             {user && <div className="flex gap-2">
+                <p className="text-center">{"Hello" +" "+ user?.firstName}</p>
                 <div className="dropdown dropdown-end mx-5">
                     <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar">
                         <div className="w-10 rounded-full">
                             <img
-                                alt="Tailwind CSS Navbar component"
-                                src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" />
+                                alt="Profile"
+                                src={user.photoUrl} />
                         </div>
                     </div>
                     <ul
@@ -43,6 +44,7 @@ const NavBar = () => {
                             </Link>
                         </li>
                         <li><Link to="/connections">Connections</Link></li>
+                        <li><Link to="/requests">Requests</Link></li>
                         <li><a onClick={handleLogout}>Logout</a></li>
                     </ul>
                 </div>

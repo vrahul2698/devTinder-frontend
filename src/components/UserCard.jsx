@@ -9,8 +9,8 @@ const UserCard = ({ user }) => {
                 <img
                     src={photoUrl}
                     alt="User"
-                    className="w-full object-contain rounded-t-xl bg-base-100"
-                // height={200} width={200} 
+                    className="object-contain rounded-t-xl bg-base-100"
+                height={200} width={200} 
                 />
 
             </figure>
