@@ -26,3 +26,16 @@ Body
     Route/Connections =/ => Connections
     Route/profile =/ => Profile
 
+
+
+
+    #Deployment
+
+    - signin on AWS EC2
+    - launch instance
+    - create keyvalue pair chmod 400 <secret>.pem
+    - ssh -i "devTinder-secret.pem" ubuntu@ec2-13-60-24-137.eu-north-1.compute.amazonaws.com -(LOgged into my machine)
+    - install the node version v22.18.0
+    - clone the frontend and backend from github https to the EC2
+
+
