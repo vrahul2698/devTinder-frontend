@@ -76,3 +76,21 @@ backend = devtinder.com/:3000 => devtinder.com/api
                 proxy_set_header Host $host;
                 proxy_cache_bypass $http_upgrade;
         }
+
+  # Adding  a custom domain name
+
+        - purchased domain name from godaddy
+        - signup on cloudflare & add a new domain name
+        - change the nameservers on godaddy and point it to cloudflare
+        - wait for smetime till your nameservers are updated
+
+
+#Sending Emails via SES
+
+        - create an IAM user
+        - GIve access to AmazonSESFullAccess
+        - Amazon SES: Create an Identity
+        - VErify your domain name
+        - Verify an email address
+        - Install AWS SDK - V3
+        - code Example = https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/ses#code-examples
