@@ -94,3 +94,15 @@ backend = devtinder.com/:3000 => devtinder.com/api
         - Verify an email address
         - Install AWS SDK - V3
         - code Example = https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/ses#code-examples
+
+
+# scheduling cron jobs in NodeJS
+        - installing node-cron
+        - learning about cron expressions syntax = crontab guru
+        - schedule a job
+        - date -fns
+        - Find all the unique email id who got connection request in previous day
+        - Send EMail 
+        - Explore queue mechanism to send buld email
+        - Amazon ses bulk email
+        - Make SendEMail Function dynamic
