@@ -11,6 +11,7 @@ import PrivacyPolicy from './components/PrivacyPolicy';
 import TermsOfService from './components/TermsOfService';
 import RefundPolicy from './components/RefundPolicy';
 import ContactUs from './components/ContactUs';
+import Premium from "./components/Premium";
 function App() {
   return (
     <>
@@ -23,6 +24,7 @@ function App() {
               <Route path="/profile" element={<Profile />} />
               <Route path="/connections" element={<Connections />} />
               <Route path="/requests" element={<Requests />} />
+              <Route path="/premium" element={<Premium />} />
               <Route path="/privacy-policy" element={<PrivacyPolicy />} />
               <Route path="/terms-of-service" element={<TermsOfService />} />
               <Route path="/refund-policy" element={<RefundPolicy />} />

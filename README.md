@@ -106,3 +106,21 @@ backend = devtinder.com/:3000 => devtinder.com/api
         - Explore queue mechanism to send buld email
         - Amazon ses bulk email
         - Make SendEMail Function dynamic
+
+
+
+# Razorpay payment gateway integration
+
+        - signup on razorpay and finish KYC
+        - Created an UI for premium page
+        - creating an API for premium in backend
+        -create key secret in .env file
+        -initialized razorpay in utils
+        - creating order on razorpay
+        - create Schema
+        -save the order detaiuls ion constants
+        -make the api dynamic
+        -setup razorpay webhook on your 
+        - validate webhook - > Ref -> https://razorpay.com/docs/webhooks/validate-test/
+        - ref -> webhook response => https://razorpay.com/docs/webhooks/payloads/payments/
+
