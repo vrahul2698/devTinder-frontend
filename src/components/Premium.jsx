@@ -1,9 +1,12 @@
 import axios from 'axios'
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { BASE_URL } from './../utils/constants';
 
 const Premium = () => {
     const [isUserPremium, setIsUserPremium] = useState(false)
+    useEffect(() => {
+        verifyPremiumUser()
+    }, []);
     const verifyPremiumUser = async () => {
         try {
             const res = await axios.get(BASE_URL + "/premium/verify", { withCredentials: true });
@@ -15,6 +18,7 @@ const Premium = () => {
             console.log("Error in Premium Page " + err.message)
         }
     }
+
     const handleBuyClick = async (type) => {
         try {
             const order = await axios.post(BASE_URL + "/payment/create", {
