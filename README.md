@@ -124,3 +124,16 @@ backend = devtinder.com/:3000 => devtinder.com/api
         - validate webhook - > Ref -> https://razorpay.com/docs/webhooks/validate-test/
         - ref -> webhook response => https://razorpay.com/docs/webhooks/payloads/payments/
 
+# Real Time Chat Application using WebSocket(socket.io)
+
+        - Build the UI for an chat windoe on /chat/"targetUserId
+        -setup sockt.io in backend 
+        - install socket.io-client in frontend
+        - create socket.js connection config in constants
+        - initialize chat
+        - create socket connection
+        - listen to events
+        - create an backend model for chat
+        - create and route for an chat 
+        - fetch the chat history for an user when the page loads
+
