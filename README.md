@@ -136,4 +136,8 @@ backend = devtinder.com/:3000 => devtinder.com/api
         - create an backend model for chat
         - create and route for an chat 
         - fetch the chat history for an user when the page loads
+        - Homework : Fix secruti bus - auth in web socket
+        - Homework : Fix bug - if I'm not an Friend , then I should no able to send an message
+        - Homework : feat : Show Green Symbol when Online.??? - {last Seen 2 Hours ago}
+        - Homework : Limit message when fetching chats from database
 
